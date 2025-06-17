@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DineEase Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="app__navbar">
+    <div class="app__navbar-logo">
+      <img src="assets/DineEase.png" alt="logo">
+    </div>
+    <ul class="app__navbar-links navbar-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#chef">Chef</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#findus">Find Us</a></li>
+    </ul>
+    <div class="app__navbar-smallscreen">
+      <div id="menu-icon" class="app__navbar-smallscreen_icon">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="app__header section__padding app__bg flex__center">
+    <h1 class="headtext__cormorant">Welcome to DineEase</h1>
+    <p class="p__opensans">Your favorite destination for gourmet experiences</p>
+    <button class="custom__button" id="explore-menu-btn">Explore Menu</button>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="app__aboutus section__padding app__bg flex__center">
+    <div class="app__aboutus-content">
+      <div class="app__aboutus-content_about">
+        <h1 class="headtext__cormorant">About Us</h1>
+        <img src="assets/spoon.png" alt="spoon" class="spoon__img" />
+        <p class="p__opensans">We are passionate about exceptional food and unforgettable experiences.</p>
+      </div>
+      <div class="app__aboutus-content_knife flex__center">
+        <img src="assets/knife.png" alt="knife" />
+      </div>
+      <div class="app__aboutus-content_history">
+        <h1 class="headtext__cormorant">Our History</h1>
+        <img src="assets/spoon.png" alt="spoon" class="spoon__img" />
+        <p class="p__opensans">Founded in 2005, DineEase blends tradition with modern flavors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="app__specialMenu flex__center section__padding" style="flex-direction: column;">
+    <h1 class="headtext__cormorant">Our Menu</h1>
+    <div class="app__specialMenu-menu">
+      <div class="app__specialMenu-menu_wine">
+        <h2>Wine & Beer</h2>
+        <ul>
+          <li>Chapel Hill Shiraz - $56</li>
+          <li>Catena Malbee - $59</li>
+          <li>La Vieille Rosé - $44</li>
+        </ul>
+      </div>
+      <div class="app__specialMenu-menu_img">
+        <img src="assets/menu.png" alt="menu image"/>
+      </div>
+      <div class="app__specialMenu-menu_cocktails">
+        <h2>Cocktails</h2>
+        <ul>
+          <li>Negroni - $26</li>
+          <li>Old Fashioned - $31</li>
+          <li>Daiquiri - $10</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHEF SECTION -->
+  <section id="chef" class="app__chef section__padding app__bg flex__center">
+    <div class="app__chef-content">
+      <h1 class="headtext__cormorant">Chef's Word</h1>
+      <img src="assets/spoon.png" alt="spoon" class="spoon__img" />
+      <p class="p__opensans">"Cooking is an art. Every dish at DineEase is a masterpiece."</p>
+      <img src="assets/sign.png" alt="signature" class="app__chef-sign" />
+    </div>
+    <div class="app__chef-img">
+      <img src="assets/chef.png" alt="chef" />
+    </div>
+  </section>
+
+  <!-- AWARDS SECTION -->
+  <section id="awards" class="app__laurels section__padding app__bg">
+    <h1 class="headtext__cormorant">Our Laurels</h1>
+    <div class="app__laurels-awards">
+      <div class="award">
+        <img src="assets/award01.png" alt="award1" />
+        <p>Bib Gourmand – Outstanding value dining</p>
+      </div>
+      <div class="award">
+        <img src="assets/award02.png" alt="award2" />
+        <p>Rising Star – Culinary innovation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section id="intro" class="app__video section__padding">
+    <h1 class="headtext__cormorant">Intro Video</h1>
+    <video controls width="320">
+      <source src="assets/intro.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="app__gallery section__padding">
+    <h1 class="headtext__cormorant">Photo Gallery</h1>
+    <div class="app__gallery-images">
+      <div class="app__gallery-images_container" id="gallery-scroll">
+        <img src="assets/gallery01.png" alt="1">
+        <img src="assets/gallery02.png" alt="2">
+        <img src="assets/gallery03.png" alt="3">
+        <img src="assets/gallery04.png" alt="4">
+      </div>
+      <div class="app__gallery-images_arrows">
+        <span id="gallery-left">←</span>
+        <span id="gallery-right">→</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIND US SECTION -->
+  <section id="findus" class="app__findus section__padding app__bg">
+    <h1 class="headtext__cormorant">Find Us</h1>
+    <p class="p__opensans">NH-31, JAUNPUR-VARANASI HIGHWAY, UP, India</p>
+    <p class="p__opensans">Call: +91 75258168XX</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="app__footer section__padding app__bg">
+    <p class="p__opensans">© 2025 DineEase. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

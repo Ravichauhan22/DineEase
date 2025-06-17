@@ -1,0 +1,216 @@
+/* ===== Base Reset and Fonts ===== */
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0C0C0C;
+  color: #FFFFFF;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* === Utilities === */
+.section__padding {
+  padding: 4rem 2rem;
+}
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app__bg {
+  background: #0C0C0C;
+}
+.headtext__cormorant {
+  font-family: 'Cormorant Upright', serif;
+  font-size: 2.5rem;
+  color: #DCCA87;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.p__opensans {
+  font-size: 1rem;
+  color: #AAAAAA;
+  text-align: center;
+}
+
+/* === Buttons === */
+.custom__button {
+  background: #DCCA87;
+  color: #0C0C0C;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.custom__button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* === Navbar === */
+.app__navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.app__navbar-logo img {
+  width: 120px;
+}
+.app__navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.app__navbar-links a:hover {
+  color: #DCCA87;
+}
+.app__navbar-smallscreen {
+  display: none;
+}
+@media (max-width: 768px) {
+  .app__navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: #000;
+    width: 100%;
+    padding: 1rem;
+  }
+  .app__navbar-links.show {
+    display: flex;
+  }
+  .app__navbar-smallscreen {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/* === Section Layouts === */
+.app__aboutus-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.app__aboutus-content_knife img {
+  height: 300px;
+}
+.app__specialMenu-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.app__specialMenu-menu_img img {
+  width: 200px;
+  height: auto;
+}
+.app__chef {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.app__chef-img img {
+  max-width: 300px;
+}
+.app__laurels-awards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.app__laurels-awards .award img {
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+.app__video video {
+  margin-top: 1rem;
+  align-content: center;
+}
+.app__gallery-images_container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+.app__gallery-images_container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.app__gallery-images_arrows {
+  margin-top: 1rem;
+  text-align: center;
+}
+.app__gallery-images_arrows span {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #DCCA87;
+}
+.app__footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #000;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+/* === Header Section - Light Background === */
+/* === Header Section Light Theme === */
+#home {
+  background-color: #f3eee5; /* soft beige */
+  color: #0C0C0C; /* dark text for contrast */
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+#home h1.headtext__cormorant {
+  color: #0C0C0C; /* override golden header if needed */
+}
+
+#home .custom__button {
+  margin-top: 1.5rem;
+}
+
+
+/* === Intro Video Centered === */
+.app__video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111111;
+  padding: 2rem;
+}
+.app__video h1 {
+  color: #DCCA87;
+  margin-bottom: 1rem;
+}
+.app__video video {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
